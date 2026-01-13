@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.widget-container {
+  width: 240px;
+  background: linear-gradient(180deg, #03301FE6 0%, #01120BE6 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 16px;
+  box-shadow: 0 8px 32px #00000066;
+  -webkit-app-region: drag;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 13px;
+  color: #1ACD81;
+  pointer-events: none;
+}
+
+.timer-display {
+  font-size: 55px;
+  font-weight: 300;
+  color: #B8FADD;
+  letter-spacing: -2px;
+  margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: #B8FADD;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  -webkit-app-region: no-drag;
+}
+
+/*button styling */
+button {
+  height: 42px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+  -webkit-app-region: no-drag; 
+}
+
+.main-button {
+  flex: 2;
+  background-color: #1ACD8133;
+  color: #1ACD81;
+  border: 1.5px solid #1ACD8166;
+}
+
+.main-button:hover {
+  background-color: #1ACD814D;
+  border-color: #1ACD8199;
+}
+
+.main-button:active {
+  background-color: #1ACD8166;
+  transform: scale(0.97);
+}
+
+.main-button.running {
+  background-color: #FF653733;
+  color: #FF6537;
+  border: 1.5px solid #FF653766;
+}
+
+.main-button.running:hover {
+  background-color: #FF65374D;
+  border-color: #FF653799;
+}
+
+.main-button.running:active {
+  background-color: #FF653766;
+}
+
+.reset-button {
+  flex: 1;
+  background-color: #B8FADD1A;
+  color: #B8FADD;
+  border: 1.5px solid #B8FADD40;
+}
+
+.reset-button:hover {
+  background-color: #B8FADD33;
+  border-color: #B8FADD66;
+}
+
+.reset-button:active {
+  background-color: #B8FADD4D;
+  transform: scale(0.97);
+}
+
+/* window control buttons */
+.window-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.window-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #B8FADD1A;
+  color: #B8FADD;
+  border: 1px solid #B8FADD40;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-btn:hover {
+  background-color: #B8FADD33;
+  border-color: #B8FADD66;
+}
+
+.window-btn:active {
+  transform: scale(0.92);
+}
+
+.close-btn:hover {
+  background-color: #FF653733;
+  border-color: #FF653766;
+  color: #FF6537;
+}
+
+.minimize-btn:hover {
+  background-color: #1ACD8133;
+  border-color: #1ACD8166;
+  color: #1ACD81;
+}
